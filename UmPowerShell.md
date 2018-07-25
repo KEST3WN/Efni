@@ -1,16 +1,16 @@
 # PowerShell
 PowerShell er skriftumál fram Microsoft sem byggir á .NET
 ## Breytur
-Breytur í PowerShell eru skilgreindar með $ og svo nafni breytunnar.
+Breytur í PowerShell eru skilgreindar með ```$``` og svo nafni breytunnar.
 
 Dæmi, búum til breytu sem heitir notandi.
 ```powershell
 $notandi
 ```
-Athugið að ekki er tekið fram af hvaða tagi breytan er og er hún núna NULL.
+Athugið að ekki er tekið fram af hvaða tagi breytan er og er hún núna ```NULL```.
 
 PowerShell getur sjálft fundið út af hvaða tagi breytan á að vera.
-Við getum notað GetType til að af hvaða tagi breytur eru.
+Við getum notað GetType til að sjá af hvaða tagi breytur eru.
 ```powershell
 $notandi.GetType()  # Þetta skilar villu af því að breytan er NULL
 
@@ -32,7 +32,7 @@ Grunnntög Powershell eru t.d. Byte, Char, Decimal, Double og Int. Sjá fullan l
 $tala.GetType()
 ```
 ## Samanburðarvirkjar
-| Hefðbundið | Powershell |
+| Python | Powershell |
 | --- | --- |
 | == | -eq |
 | != | -ne |
@@ -40,6 +40,13 @@ $tala.GetType()
 | <= | -le |
 | > | -gt |
 | >= | -ge |
+
+### Rökvirkjar
+| Python | Powershell |
+| --- | --- |
+| ```and``` | -and |
+| or | -or |
+| not | -not |
 ## Skilyrðissetningar
 ### if-elseif-else
 ```powershell
