@@ -1,5 +1,17 @@
 # PowerShell
 PowerShell er skriftumál fram Microsoft sem byggir á .NET
+* [Breytur](#Breytur)
+* [Samanburðar- og rökvirkjar](#Samanburðar--og-rökvirkjar)
+* [Skilyrðissetningar](#Skilyrðissetningar)
+* [Lykkjur](#Lykkjur)
+* [Fylki](#Fylki)
+* [Hashtöflur - Dictionary](#Hashtöflur---Dictionary)
+* [Föll](#Föll)
+* [Lesa frá console](#Lesa-frá-console)
+* [Vinna með tölur sem texta](#Vinna-með-tölur-sem-texta)
+* [Skrifa í CSV skrá](#Skrifa-í-CSV-skrá)
+* [Athugasemdir í kóða](#Athugasemdir-í-kóða)
+
 ## Breytur
 Breytur í PowerShell eru skilgreindar með ```$``` og svo nafni breytunnar.
 
@@ -31,7 +43,8 @@ Grunnntög Powershell eru t.d. Byte, Char, Decimal, Double og Int. Sjá fullan l
 [Int]$tala = 3.7   # Innihald breytunnar verður 4 
 $tala.GetType()
 ```
-## Samanburðarvirkjar
+## Samanburðar- og rökvirkjar
+### Samanburðarvirkjar
 | Python | Powershell |
 | --- | --- |
 | == | -eq |
@@ -44,7 +57,7 @@ $tala.GetType()
 ### Rökvirkjar
 | Python | Powershell |
 | --- | --- |
-| ```and``` | -and |
+| and | -and |
 | or | -or |
 | not | -not |
 ## Skilyrðissetningar
@@ -216,7 +229,7 @@ $iTala = 3
 # eða
 "fTalan er {0:N2} með tveimur aukastöfum en iTala {1:N1} með einum aukastaf" -f $fTala, $iTala
 ```
-## Skrifa í CSV skrár
+## Skrifa í CSV skrá
 Þægilegasta leiðin til að skrifa eitthvað í CSV skrá er að búa til fylki sem inniheldur gögnin sem skrifa á í skránna.
 Gögnin sjálf er svo best að geyma í því sem heitir <code>PSCustomObject</code>.
 ### Búa til <code>PSCustomObject</code>
@@ -269,4 +282,17 @@ foreach($n in $notendur) {
 eða "pæpað" í <code>Export-CSV</code> skipunina.
 ```powershell
 $notendur | Export-Csv -Path "C:\Users\Administrator\Desktop\skra2.csv" -NoTypeInformation -Encoding Unicode
+```
+## Athugasemdir í kóða
+Einnar línu athugasemdir.
+```powershell
+# þetta er einnar línu athugasemd
+````
+Athugasemdir sem ná yfir tvær eða fleiri línur.
+```powershell
+<#
+  Hér er athugasemd 
+  sem getur náð yfir 
+  margar línur.
+#>
 ```
