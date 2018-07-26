@@ -5,11 +5,11 @@ PowerShell er skriftumál fram Microsoft sem byggir á .NET
 * [Skilyrðissetningar](#skilyrðissetningar)
 * [Lykkjur](#lykkjur)
 * [Fylki](#fylki)
-* [Hashtöflur - Dictionary](#hashtöflur-Dictionary)
+* [Hashtöflur - Dictionary](#hashtöflur---dictionary)
 * [Föll](#föll)
 * [Lesa frá console](#lesa-frá-console)
 * [Vinna með tölur sem texta](#vinna-með-tölur-sem-texta)
-* [Skrifa í CSV skrá](#Skrifa-í-CSV-skrá)
+* [Skrifa í CSV skrá](#skrifa-í-csv-skrá)
 * [Athugasemdir í kóða](#athugasemdir-í-kóða)
 
 ## Breytur
