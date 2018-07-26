@@ -10,7 +10,7 @@ PowerShell er skriftumál fram Microsoft sem byggir á .NET
 * [Lesa frá console](#Lesa-frá-console)
 * [Vinna með tölur sem texta](#Vinna-með-tölur-sem-texta)
 * [Skrifa í CSV skrá](#Skrifa-í-CSV-skrá)
-* [Athugasemdir í kóða](#Athugasemdir-í-kóða)
+* [Athugasemdir í kóða](##Athugasemdir-í-kóða)
 
 ## Breytur
 Breytur í PowerShell eru skilgreindar með ```$``` og svo nafni breytunnar.
