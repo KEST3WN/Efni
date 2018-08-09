@@ -267,7 +267,7 @@ $notendur = @()
 $notendur += $upplysingar 
 
 $upplysingar = [PSCustomObject]@{
-  Nafn = "Jóna Jónsdóttirn"
+  Nafn = "Jóna Jónsdóttir"
   Heimilisfang = "Hvergigata 70"
 }
 
