@@ -41,6 +41,7 @@ Grunnntög Powershell eru t.d. Byte, Char, Decimal, Double og Int. Sjá fullan l
 ```powershell
 [Int]$tala = 3.2   # Innihald breytunnar verður 3 
 [Int]$tala = 3.7   # Innihald breytunnar verður 4 
+[Int]$tala = [Math]::Floor(3.7) # Innihald breytunnar verður 3 
 $tala.GetType()
 ```
 ## Samanburðar- og rökvirkjar
@@ -219,6 +220,17 @@ $a = $a -as [int]
 # eða 
 $a = 0 + $a
 $a = $a + 0
+```
+**Athugið** að ef verið er að vinna með ```char``` þarf að nota aðrar aðferðir.
+```powershell
+[char]$a = '1'
+$i = $a.toString() / 1 # $i inniheldur núna töluna 1
+```
+Til að fá ASCII gildi stafs ná nota:
+```powershell
+$stafur = 'A'
+$asciiGildi = [int][char]$stafur
+# $asciiGildi inniheldur 65
 ```
 ## Vinna með tölur sem texta
 ```powershell
