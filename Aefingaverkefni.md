@@ -26,7 +26,7 @@ Dæmi um notkun:
 ```powershell
 Sesar -Texti "I TAEKNISKOLANUM ER GAMAN" -Hlidrun 5
 # skilar: NYFJPSNXPTQFSZRJWLFRFS
-Sesar -Texti "NYFJPSNXPTQFSZRJWLFRFS" -Hlidrun 5 -Adkodun
+Sesar -Texti "NYFJPSNXPTQFSZRJWLFRFS" -Hlidrun 5 -Afkodun
 # skilar: ITAEKNISKOLANUMERGAMAN
 ```
 Aukaverkefni: 
